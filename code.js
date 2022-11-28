@@ -7,42 +7,52 @@ const animals = [
         'cat', 
         'fox', 
         'horse', 
-        'squirrel'];
+        'squirrel'
+    ];
 const messages = [
         'happiness consists of getting enough sleep',
         'better to ask the way than to go astray',
         'the body achieves what te mind believes',
-        'it takes as much energy to wish as it does to plan'];
+        'it takes as much energy to wish as it does to plan'
+    ];
 const toKnow = [
         'you\'re enough',
         'it\'s ok to feel down sometimes',
         'you\'ll see some changes soon',
-        'you\'re on the right path'];
+        'you\'re on the right path'
+    ];
 
 // store the output in new array
 let guardianMessage = [];
 
 //getting the message
 if (animals[randomNumber1] === animals[0]) {
-    guardianMessage.push(`   ☆   Your today's guardian animal is the ${animals[0]}.   ☆   `);
-    guardianMessage.push(`       ✧･ﾟ: *✧･ﾟ:*     🐈     *:･ﾟ✧*:･ﾟ✧   `);
-    guardianMessage.push(`   ☆   It's message for you is: "${messages[0]}".    ☆   `);
-    guardianMessage.push(`   ☆   Your guardian animal wants you to know that ${toKnow[randomNumber2]}.   ☆   `)
+    guardianMessage.push(
+        `   ☆   Your today's guardian animal is the ${animals[0]}.   ☆   `, 
+        `       ✧･ﾟ: *✧･ﾟ:*     🐈     *:･ﾟ✧*:･ﾟ✧   `,
+        `   ☆   It's message for you is: "${messages[0]}".    ☆   `,
+        `   ☆   Your guardian animal wants you to know that ${toKnow[randomNumber2]}.   ☆   `
+        );
 } else if (animals[randomNumber1] === animals[1]) {
-    guardianMessage.push(`   ☆   Your today's guardian animal is the ${animals[1]}.    ☆   `);
-    guardianMessage.push(`       ✧･ﾟ: *✧･ﾟ:*     🦊    *:･ﾟ✧*:･ﾟ✧   `);
-    guardianMessage.push(`   ☆   It's message for you is: "${messages[1]}".    ☆   `);
-    guardianMessage.push(`   ☆   Your guardian animal wants you to know that ${toKnow[randomNumber2]}.   ☆   `)
+    guardianMessage.push(
+        `   ☆   Your today's guardian animal is the ${animals[1]}.    ☆   `,
+        `       ✧･ﾟ: *✧･ﾟ:*     🦊    *:･ﾟ✧*:･ﾟ✧   `,
+        `   ☆   It's message for you is: "${messages[1]}".    ☆   `,
+        `   ☆   Your guardian animal wants you to know that ${toKnow[randomNumber2]}.   ☆   `
+        );
 } else if (animals[randomNumber1] === animals[2]) {
-    guardianMessage.push(`   ☆   Your today's guardian animal is the ${animals[2]}.    ☆   `);
-    guardianMessage.push(`       ✧･ﾟ: *✧･ﾟ:*     🐎     *:･ﾟ✧*:･ﾟ✧   `);
-    guardianMessage.push(`   ☆   It's message for you is: "${messages[2]}".    ☆   `);
-    guardianMessage.push(`   ☆   Your guardian animal wants you to know that ${toKnow[randomNumber2]}.   ☆   `)
+    guardianMessage.push(
+        `   ☆   Your today's guardian animal is the ${animals[2]}.    ☆   `, 
+        `       ✧･ﾟ: *✧･ﾟ:*     🐎     *:･ﾟ✧*:･ﾟ✧   `,
+        `   ☆   It's message for you is: "${messages[2]}".    ☆   `,
+        `   ☆   Your guardian animal wants you to know that ${toKnow[randomNumber2]}.   ☆   `)
 } else if (animals[randomNumber1] === animals[3]) {
-    guardianMessage.push(`   ☆   Your today's guardian animal is the ${animals[3]}.    ☆   `);
-    guardianMessage.push(`       ✧･ﾟ: *✧･ﾟ:*     🐿     *:･ﾟ✧*:･ﾟ✧   `);
-    guardianMessage.push(`   ☆   It's message for you is: "${messages[3]}".    ☆   `);
-    guardianMessage.push(`   ☆   Your guardian animal wants you to know that ${toKnow[randomNumber2]}.   ☆   `)
+    guardianMessage.push(
+        `   ☆   Your today's guardian animal is the ${animals[3]}.    ☆   `, 
+        `       ✧･ﾟ: *✧･ﾟ:*     🐿     *:･ﾟ✧*:･ﾟ✧   `,  
+        `   ☆   It's message for you is: "${messages[3]}".    ☆   `,   
+        `   ☆   Your guardian animal wants you to know that ${toKnow[randomNumber2]}.   ☆   `
+        );
 } else {
     return `The guardian animals are asleep`
 };
